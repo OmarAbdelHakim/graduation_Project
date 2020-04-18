@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_layout"
+    android:padding="20dp">
+    // layout to display item "isExpandable" is False
+
+    <TextView
+        android:id="@+id/txt_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawableLeft="@drawable/ic_bus"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="this item without child"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_layout"
+    android:padding="20dp">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="false"
+        android:gravity="center"
+        >
+
+        <View
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_tap" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_bus"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="this item with child"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/expandableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_item_text"
+        android:orientation="vertical"
+        app:ael_duration="400"
+        app:ael_expanded="true"
+        app:ael_interpolator="bounce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/txt_child_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_pin2"
+            android:drawablePadding="10dp"
+            android:padding="8dp"
+            android:text="this child item"
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="20sp" />
+
+
+
+
+
+
+        <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/SecondexpandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:ael_duration="400"
+            app:ael_expanded="true"
+            app:ael_interpolator="bounce"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt_child_item_text_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_pin2"
+                android:drawablePadding="10dp"
+
+                android:padding="8dp"
+                android:text="this third item"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="20sp" />
+
+
+        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_message2"
+            android:icon="@drawable/ic_message"
+            android:title="Online Location"
+            />
+        <item
+            android:id="@+id/nav_chat2"
+            android:icon="@drawable/ic_route"
+            android:title="Line"
+            />
+        <item
+            android:id="@+id/nav_profile2"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"
+            />
+    </group>
+    <item android:title="Communicate">
+
+        <menu>
+            <item
+                android:id="@+id/nav_send2"
+                android:icon="@drawable/ic_pinomar"
+                android:title="Online Location"
+                />
+            <item
+                android:id="@+id/nav_Share2"
+                android:icon="@drawable/ic_share"
+                android:title="Share"
+                />
+            <item
+                android:id="@+id/nav_logout2"
+                android:icon="@drawable/ic_logout"
+                android:title="Log Out"
+                />
+
+        </menu>
+
+    </item>
+
+
+
+
+</menu>

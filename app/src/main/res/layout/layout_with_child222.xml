@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_layout"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/button2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="false"
+        android:gravity="center"
+        >
+
+        <View
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_tap" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_item_text_222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawableLeft="@drawable/ic_team"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="this item with child"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/new_First_expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_item_text_222"
+        android:orientation="vertical"
+        app:ael_duration="400"
+        app:ael_expanded="true"
+        app:ael_interpolator="bounce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/txt_child_item_text_First"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawableRight="@drawable/ic_logout"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="this child item 1 "
+            android:textColor="@android:color/widget_edittext_dark"
+            android:textSize="20sp" />
+
+
+
+
+
+
+
+        <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/new_Second_expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:ael_duration="400"
+            app:ael_expanded="true"
+            app:ael_interpolator="bounce"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt_child_item_text_Second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_account"
+                android:drawableRight="@drawable/ic_logout"
+
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="this third item 2 "
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="20sp" />
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/new_Third_expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="true"
+                app:ael_interpolator="bounce"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_child_item_text_Third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:drawableRight="@drawable/ic_logout"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="this third item 3 "
+                    android:textColor="@android:color/widget_edittext_dark"
+                    android:textSize="20sp" />
+
+                <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                    android:id="@+id/new_Fourth_expandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:ael_duration="400"
+                    app:ael_expanded="true"
+                    app:ael_interpolator="bounce"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_child_item_text_Fourth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_account"
+                        android:drawableRight="@drawable/ic_logout"
+
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="this third item 4 "
+                        android:textColor="@android:color/widget_edittext_dark"
+                        android:textSize="20sp" />
+
+
+                </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+</RelativeLayout>
